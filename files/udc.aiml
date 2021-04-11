@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+
+  <category>
+    <pattern>hi</pattern>
+    <template><srai>hello</srai></template>
+  </category>
+  
+  
+ <category>
+    <pattern>hello</pattern>
+    <template>
+    Hello!
+    <think><set name="topic">jobs</set></think>
+    <br/>Would you want me to recommend Computer Science jobs?
+    </template>
+</category>
+<topic name="jobs">
+    <category>
+        <pattern>YES</pattern>
+        <that>Would you want me to recommend Computer Science jobs</that>
+        <template>
+            Here's my 5 top Computer Science jobs recommendation for you! 
+            Use the arrow to scroll through the list.
+            <carousel>
+                <card>
+                  <title>Software Developer</title>
+                  <subtitle>$72k/year</subtitle>
+                </card>
+                <card>
+                  <title>Web Developer</title>
+                  <subtitle>$60k/year</subtitle>
+                </card>
+                <card>
+                  <title>Information Security Analyst</title>
+                  <subtitle>$72k/year</subtitle>
+                </card>
+                <card>
+                  <title>Systems Engineer</title>
+                  <subtitle>$76k/year</subtitle>
+                </card>
+                <card>
+                  <title>Data Scientist</title>
+                  <subtitle>$96k/year</subtitle>
+                </card>
+            </carousel>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NO</pattern>
+        <that>Would you want me to recommend Computer Science jobs</that>
+        <template>Okay bye!</template>
+    </category>
+ </topic>
+  
+</aiml>
