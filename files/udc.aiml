@@ -6,13 +6,17 @@
   </category>
 
   <category>
-    <pattern>hi</pattern>
+    <pattern>HI</pattern>
     <template><srai>hello</srai></template>
   </category>
   
+  <category>
+    <pattern>BYE</pattern>
+    <template>Bye!</template>
+  </category>
   
  <category>
-    <pattern>hello</pattern>
+    <pattern>HELLO</pattern>
     <template>
     Hello!
     <think><set name="topic">jobs</set></think>
@@ -57,5 +61,7 @@
         <template>Okay bye!</template>
     </category>
  </topic>
+ 
+ 
   
 </aiml>
