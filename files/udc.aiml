@@ -28,31 +28,50 @@
         <pattern>YES</pattern>
         <that>Would you want me to recommend Computer Science jobs</that>
         <template>
-            Here's my 5 top Computer Science jobs recommendation for you! 
-            Use the arrow to scroll through the list.
-            <carousel>
-                <card>
-                  <title>Software Developer</title>
-                  <subtitle>$72k/year</subtitle>
-                </card>
-                <card>
-                  <title>Web Developer</title>
-                  <subtitle>$60k/year</subtitle>
-                </card>
-                <card>
-                  <title>Information Security Analyst</title>
-                  <subtitle>$72k/year</subtitle>
-                </card>
-                <card>
-                  <title>Systems Engineer</title>
-                  <subtitle>$76k/year</subtitle>
-                </card>
-                <card>
-                  <title>Data Scientist</title>
-                  <subtitle>$96k/year</subtitle>
-                </card>
-            </carousel>
+            Great! I would like you to tell me a bit about yourself!
+            <br/>
+            <br/>Which language do you feel comfortable programming in?
+            <button>
+              <text>Python</text>
+              <postback>PYTHON</postback>
+            </button>
+            <button>
+              <text>Javascript</text>
+              <postback>JAVASCRIPT</postback>
+            </button>
+            <button>
+              <text>C</text>
+              <postback>C</postback>
+            </button>
+            <button>
+              <text>SQL</text>
+              <postback>SQL</postback>
+            </button>
+            <button>
+              <text>Swift</text>
+              <postback>SWIFT</postback>
+            </button>
         </template>
+    </category>
+    <category>
+        <pattern>JAVASCRIPT</pattern>
+        <template>You could work as a Web Developer!</template>
+    </category>
+    <category>
+        <pattern>PYTHON</pattern>
+        <template>You could work as a Data Scientist!</template>
+    </category>
+    <category>
+        <pattern>C</pattern>
+        <template>You could work as a Systems Engineer!</template>
+    </category>
+    <category>
+        <pattern>SQL</pattern>
+        <template>You could work as a Database Administrator!</template>
+    </category>
+    <category>
+        <pattern>SWIFT</pattern>
+        <template>You could work as a iOS Developer!</template>
     </category>
     
     <category>
